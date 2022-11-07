@@ -4,10 +4,9 @@ import React from 'react'
 const Days = ({text}) => {
   return (
     <View>
-        <TouchableOpacity style={{borderRadius:'50%', height:40, width:40 , margin:15, backgroundColor:'#ffffff', justifyContent:'center', alignItems:'center'}} title={text}>
-            <Text>{text}</Text>
+        <TouchableOpacity style={styles.item} title={text}>
+            <Text styles={{marginBottom:20}}>{text}</Text>
         </TouchableOpacity>
-        {/* <TouchableOpacity></TouchableOpacity> */}
         
     </View>
   )
@@ -16,5 +15,14 @@ const Days = ({text}) => {
 export default Days
 
 const styles = StyleSheet.create({
-
+  item:{
+      borderRadius:'50%',
+      height:17, 
+      width:17 ,
+      marginLeft: 16, 
+      marginRight: 16,  
+      backgroundColor:'#ffffff',
+      justifyContent:'center', 
+      alignItems:'center'
+  }
 })
